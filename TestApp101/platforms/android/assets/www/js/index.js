@@ -10,10 +10,9 @@ function onDeviceReady() {
 }
 
 function onSuccess(contacts) {
-	var html = '';
-	
 	for(var i = 0; i < contacts.length; i++) {
-			html += '<div data-role="collapsible" data-inset="false">';
+			var html = '<div data-role="collapsible" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-inset="false">';
+
 			html += '<h2>' + contacts[i].displayName + '</h2>';
 			html += '<ul data-role="listview">'
 
@@ -24,12 +23,10 @@ function onSuccess(contacts) {
 			}
 
 			html += '</ul></div>';
+
+			$('#contactsList').append(html);
 	}
 
-	$('#contactsList').append(html);
-
-	alert(html);
-	
 	$('[data-role=collapsible]').collapsible().trigger('create');
 }
 
