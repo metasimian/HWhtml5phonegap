@@ -7,14 +7,14 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>Employee Directory</name>
+    <name>Lulu's Childhood App</name>
 
     <description>
-        A simple employee directory application
+       Child's play....
     </description>
 
     <author href="http://coenraets.org" email="ccoenraets@gmail.com">
-        Christophe Coenraets
+        Lulu C
     </author>
 
 </widget>
